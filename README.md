@@ -13,11 +13,14 @@ Ezra finds the events worth your time, or your team's, and posts the best three 
 - **Checks what you send it.** Drop a screenshot of an event and get go or skip in two lines.
 - **Keeps the record in a Google Sheet you own:** the brief you can edit, and every event seen with what came of it.
 
-| Skill | Does |
+One skill, `event-scout`. Ezra reads only the part the moment needs:
+
+| File | Used when |
 |---|---|
-| `event-scout-setup` | Interviews you, proposes a watchlist, creates the sheet, runs once live, arms the daily cron |
-| `event-scout` | The daily run, plus your `go` / `skip` / `more` replies and the follow-up after an event |
-| `event-check` | Go or skip on one shared event |
+| `SKILL.md` | Always. What Event Scout is and which file to read |
+| `setup.md` | Setting up: interview, watchlist, sheet, one live run, daily cron |
+| `run.md` | The daily run, your `go` / `skip` / `more` replies, and the follow-up after an event |
+| `check.md` | Go or skip on one event you share |
 
 ### Requirements
 

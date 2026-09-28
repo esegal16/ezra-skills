@@ -1,12 +1,3 @@
----
-name: event-scout-setup
-description: Set up Event Scout for a person or a team. Interview for goals, area and the rooms worth being in, propose a watchlist, create the Events sheet, and arm a daily cron that posts the best events to attend. Use when someone asks you to find events, meetups, dinners, hackathons or conferences worth going to, or to set up event scouting.
-scope: company
-requiredCapabilities:
-  - egress:sheets.googleapis.com
-  - egress:www.googleapis.com
----
-
 # Event Scout: setup
 
 Event Scout finds events worth attending, scores them against what the owner needs right now, and posts the top 3 each morning. It never registers anyone. The owner registers; Event Scout finds the room and says why.
@@ -76,11 +67,11 @@ Record in the Brief the actor id and the exact input that returned posts. A scra
 
 ## 5. Run once, live
 
-Run the `event-scout` skill now and show the digest. Ask what's wrong with the ranking and fix the Brief, not the skill.
+Follow `skill://event-scout/run.md` now and show the digest. Ask what's wrong with the ranking and fix the Brief, not the skill.
 
 ## 6. Arm the cron
 
-Create a cron in this scope at `digest_time`, with the text `Run the event-scout skill.` It delivers to this channel, or to the owner's DM when set up in a DM. Show the owner the cron's title, schedule and destination, and the sheet link.
+Create a cron in this scope at `digest_time`, with the text `Run the event-scout skill: the daily run.` It delivers to this channel, or to the owner's DM when set up in a DM. Show the owner the cron's title, schedule and destination, and the sheet link.
 
 ## Boundaries
 

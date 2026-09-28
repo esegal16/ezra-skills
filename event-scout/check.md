@@ -1,12 +1,3 @@
----
-name: event-check
-description: Judge one event someone shares, whether a screenshot, a link or a forwarded invite, against their Event Scout brief. Look it up, score it, say go or skip in two lines, and log it. Use when someone posts an event and asks whether to go, or drops an event screenshot or link in an Event Scout channel.
-scope: company
-requiredCapabilities:
-  - egress:sheets.googleapis.com
-  - egress:www.googleapis.com
----
-
 # Event check: go or skip
 
 ## 1. Read it
@@ -19,7 +10,7 @@ Through the `web-research` skill, find the listing or the host's own post, who t
 
 ## 3. Score it
 
-If this scope's memory holds `Event Scout sheet: <url>`, read the Brief and score on the five axes in `event-scout`, step 4, against its floor. Check the owner's calendar for a clash if one is connected.
+If this scope's memory holds `Event Scout sheet: <url>`, read the Brief and score on the five axes in `skill://event-scout/run.md`, step 4, against its floor. Check the owner's calendar for a clash if one is connected.
 
 Without a brief, ask the three questions that decide it: what it's for, whether the time works, and who they'd want to meet. Then score on the answers.
 
