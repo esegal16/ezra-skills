@@ -2,6 +2,8 @@
 
 Skill packs for [Ezra](https://tryezra.ai), the AI employee that lives in your Slack. An admin imports a pack once and every skill in it becomes available to your Ezra.
 
+`first-hour`, Ezra's first conversation, is built in. It is never imported from this repository.
+
 ## Event Scout
 
 Ezra finds the events worth your time, or your team's, and posts the best three each morning.
@@ -30,7 +32,7 @@ One skill, `event-scout`. Ezra reads only the part the moment needs:
 ### Install
 
 1. Admin UI → **Skill packs** → **Register**: this repository's URL and a pinned commit.
-2. Open the pack, **Import all**.
+2. Open the pack and choose which skills to import. Choose `event-scout`.
 
 ### Use
 
